@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>139528139544-t97i83g0mkunsmqfm8de5c82lfg3iir5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.139528139544-t97i83g0mkunsmqfm8de5c82lfg3iir5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC3LPW5IqDw5iEPwgRsMv1_u80MAmN7UwQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>139528139544</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.SwiftMemoryCard.ios</string>
+	<key>PROJECT_ID</key>
+	<string>swiftmemorycard</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swiftmemorycard.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:139528139544:ios:80e6202091d4523d</string>
+	<key>DATABASE_URL</key>
+	<string>https://swiftmemorycard.firebaseio.com</string>
+</dict>
+</plist>
