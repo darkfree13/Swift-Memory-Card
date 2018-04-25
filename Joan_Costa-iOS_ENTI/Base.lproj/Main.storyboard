@@ -214,9 +214,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sky" highlightedImage="Sky" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2UX-7b-40L">
-                                <rect key="frame" x="-141" y="5.5" width="656" height="656"/>
+                                <rect key="frame" x="-141" y="-158.5" width="656" height="984"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="2UX-7b-40L" secondAttribute="height" multiplier="500:500" id="g0F-8k-Mj6"/>
+                                    <constraint firstAttribute="width" secondItem="2UX-7b-40L" secondAttribute="height" multiplier="500:750" id="g0F-8k-Mj6"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Leaderboard" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GMY-JP-EnZ">
