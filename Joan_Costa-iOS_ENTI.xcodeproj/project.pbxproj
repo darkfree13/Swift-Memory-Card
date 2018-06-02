@@ -21,6 +21,8 @@
 		49607502204DAAEB00354A4D /* Joan_Costa_iOS_ENTITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49607501204DAAEB00354A4D /* Joan_Costa_iOS_ENTITests.swift */; };
 		4960750D204DAAEB00354A4D /* Joan_Costa_iOS_ENTIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960750C204DAAEB00354A4D /* Joan_Costa_iOS_ENTIUITests.swift */; };
 		49B2B2A9208F9CD50007334B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2B2A8208F9CD50007334B /* Player.swift */; };
+		49F0B68620C2F26600BD8B6A /* flipCard.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49F0B68520C2F26600BD8B6A /* flipCard.wav */; };
+		49F0B68920C2F5E200BD8B6A /* CasinoLoop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49F0B68820C2F5E200BD8B6A /* CasinoLoop.mp3 */; };
 		6EB576730D7DCABE4DB2B5D8 /* Pods_Joan_Costa_iOS_ENTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF69591524E81C995E4698C /* Pods_Joan_Costa_iOS_ENTI.framework */; };
 		8A5E1318011E08C4454B196B /* Pods_Joan_Costa_iOS_ENTITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1036F222A77FEEC7D630F568 /* Pods_Joan_Costa_iOS_ENTITests.framework */; };
 		8D4AC947B706B9DCE88C349A /* Pods_Joan_Costa_iOS_ENTIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C333537C3B94F439DB4118E /* Pods_Joan_Costa_iOS_ENTIUITests.framework */; };
@@ -67,6 +69,8 @@
 		4960750C204DAAEB00354A4D /* Joan_Costa_iOS_ENTIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joan_Costa_iOS_ENTIUITests.swift; sourceTree = "<group>"; };
 		4960750E204DAAEB00354A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B2B2A8208F9CD50007334B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		49F0B68520C2F26600BD8B6A /* flipCard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipCard.wav; sourceTree = "<group>"; };
+		49F0B68820C2F5E200BD8B6A /* CasinoLoop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CasinoLoop.mp3; sourceTree = "<group>"; };
 		5C9ACBF53CB88F43B38E9A34 /* Pods-Joan_Costa-iOS_ENTIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joan_Costa-iOS_ENTIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Joan_Costa-iOS_ENTIUITests/Pods-Joan_Costa-iOS_ENTIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6C333537C3B94F439DB4118E /* Pods_Joan_Costa_iOS_ENTIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joan_Costa_iOS_ENTIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ABB73CDCDE2ADF8B96C0ED /* Pods-Joan_Costa-iOS_ENTITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Joan_Costa-iOS_ENTITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Joan_Costa-iOS_ENTITests/Pods-Joan_Costa-iOS_ENTITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +165,7 @@
 				49B2B2A8208F9CD50007334B /* Player.swift */,
 				492DAA462085F69D008E6715 /* CardData.swift */,
 				496074F0204DAAEB00354A4D /* Main.storyboard */,
-				496074F3204DAAEB00354A4D /* Assets.xcassets */,
+				49F0B68720C2F26D00BD8B6A /* Assets */,
 				496074F5204DAAEB00354A4D /* LaunchScreen.storyboard */,
 				496074F8204DAAEB00354A4D /* Info.plist */,
 			);
@@ -184,6 +188,16 @@
 				4960750E204DAAEB00354A4D /* Info.plist */,
 			);
 			path = "Joan_Costa-iOS_ENTIUITests";
+			sourceTree = "<group>";
+		};
+		49F0B68720C2F26D00BD8B6A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				49F0B68820C2F5E200BD8B6A /* CasinoLoop.mp3 */,
+				496074F3204DAAEB00354A4D /* Assets.xcassets */,
+				49F0B68520C2F26600BD8B6A /* flipCard.wav */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +316,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				496074F7204DAAEB00354A4D /* LaunchScreen.storyboard in Resources */,
+				49F0B68920C2F5E200BD8B6A /* CasinoLoop.mp3 in Resources */,
 				49414C69208F6926001AA69C /* GoogleService-Info.plist in Resources */,
+				49F0B68620C2F26600BD8B6A /* flipCard.wav in Resources */,
 				496074F4204DAAEB00354A4D /* Assets.xcassets in Resources */,
 				496074F2204DAAEB00354A4D /* Main.storyboard in Resources */,
 			);
@@ -520,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -573,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

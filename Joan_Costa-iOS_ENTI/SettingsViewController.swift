@@ -29,7 +29,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textLabelEffect: UILabel!
     /* textos de proba*/
     
-    
+     let notification = NotificationCenter.default
     
     
     /* functions of segment and switch*/
@@ -43,9 +43,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         case 1:
             textLabelProba.text = "Medium";
             UserDefaults.standard.set("medium", forKey:"gameLevel")
-        case 2:
-            textLabelProba.text = "Hard";
-            UserDefaults.standard.set("hard", forKey:"gameLevel")
         default:
             break
         }
@@ -57,10 +54,15 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
             textLabelMusic.text = "M:Off"
             UserDefaults.standard.set("OFF", forKey:"musicSound")
             switchMusic.setOn(false, animated:true)
+            UserDefaults.standard.set("NO", forKey:"musicPlaying")
+            notification.post(name: Notification.Name("StopMusic"), object: nil)
+            
         } else {
             textLabelMusic.text = "M:On"
             UserDefaults.standard.set("ON", forKey:"musicSound")
+            UserDefaults.standard.set("YES", forKey:"musicPlaying")
             switchMusic.setOn(true, animated:true)
+            notification.post(name: Notification.Name("PlayMusic"), object: nil)
         }
     }
     
@@ -130,8 +132,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
             segmentedControl.selectedSegmentIndex = 0
         case "medium":
             segmentedControl.selectedSegmentIndex = 1
-        case "hard":
-            segmentedControl.selectedSegmentIndex = 2
         default:
             break
 

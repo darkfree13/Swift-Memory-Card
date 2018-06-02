@@ -39,8 +39,9 @@ class ScoreViewController: UIViewController, UITableViewDataSource, UITableViewD
        
         
         // Exemple de com llegir local data
-        let savedData = (UserDefaults.standard.string(forKey: "Key")) as String?
-        print("The key is...", savedData!)
+        if let savedData = UserDefaults.standard.string(forKey: "Key") {
+            print("The key is...", savedData)
+        }
 
          // Exemple de com llegir local data
         
@@ -60,6 +61,7 @@ class ScoreViewController: UIViewController, UITableViewDataSource, UITableViewD
             if snapshot.childrenCount > 0 {
                 self.newPlayer.removeAll()
                 for players in snapshot.children.allObjects as! [DataSnapshot] {
+                    
                     //getting values
                     let playersObject = players.value as? [String: AnyObject]
                     let playersName  = playersObject?["NameID"]
