@@ -36,6 +36,9 @@ class GameViewController: UIViewController {
     var audioPlayer: AVAudioPlayer?
     var isEffectOn: String = ""
     
+    //Level
+    var levelPlaying: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let userDefaults = UserDefaults.standard
@@ -50,7 +53,13 @@ class GameViewController: UIViewController {
                 isEffectOn = "ON"
             }
         }
-        
+        if let savedLevel = userDefaults.string(forKey: "gameLevel"){
+            if savedLevel == "medium"{
+                levelPlaying = "medium"
+            }else{
+                levelPlaying = "easy"
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -113,17 +122,14 @@ class GameViewController: UIViewController {
         }
         
         if (winCondition()){
-            
-            let highestScore:Int = UserDefaults.standard.integer(forKey: "highestScore")
-            if (Int(score) > highestScore){
-                UserDefaults.standard.set(Int(score), forKey:"highestScore")
-                addPlayer()
+            if (levelPlaying == "medium"){
+                let highestScore:Int = UserDefaults.standard.integer(forKey: "highestScore")
+                if (Int(score) > highestScore){
+                    UserDefaults.standard.set(Int(score),forKey:"highestScore")
+                    addPlayer()
+                }
             }
             gameFinished()
-            
-            
-            
-            
         }
         
     }

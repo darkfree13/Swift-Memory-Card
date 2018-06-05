@@ -18,32 +18,11 @@
 		496074F2204DAAEB00354A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496074F0204DAAEB00354A4D /* Main.storyboard */; settings = {ASSET_TAGS = (1, ); }; };
 		496074F4204DAAEB00354A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496074F3204DAAEB00354A4D /* Assets.xcassets */; };
 		496074F7204DAAEB00354A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496074F5204DAAEB00354A4D /* LaunchScreen.storyboard */; };
-		49607502204DAAEB00354A4D /* Joan_Costa_iOS_ENTITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49607501204DAAEB00354A4D /* Joan_Costa_iOS_ENTITests.swift */; };
-		4960750D204DAAEB00354A4D /* Joan_Costa_iOS_ENTIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960750C204DAAEB00354A4D /* Joan_Costa_iOS_ENTIUITests.swift */; };
 		49B2B2A9208F9CD50007334B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2B2A8208F9CD50007334B /* Player.swift */; };
 		49F0B68620C2F26600BD8B6A /* flipCard.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49F0B68520C2F26600BD8B6A /* flipCard.wav */; };
 		49F0B68920C2F5E200BD8B6A /* CasinoLoop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49F0B68820C2F5E200BD8B6A /* CasinoLoop.mp3 */; };
 		6EB576730D7DCABE4DB2B5D8 /* Pods_Joan_Costa_iOS_ENTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF69591524E81C995E4698C /* Pods_Joan_Costa_iOS_ENTI.framework */; };
-		8A5E1318011E08C4454B196B /* Pods_Joan_Costa_iOS_ENTITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1036F222A77FEEC7D630F568 /* Pods_Joan_Costa_iOS_ENTITests.framework */; };
-		8D4AC947B706B9DCE88C349A /* Pods_Joan_Costa_iOS_ENTIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C333537C3B94F439DB4118E /* Pods_Joan_Costa_iOS_ENTIUITests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		496074FE204DAAEB00354A4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 496074E1204DAAEA00354A4D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 496074E8204DAAEA00354A4D;
-			remoteInfo = "Joan_Costa-iOS_ENTI";
-		};
-		49607509204DAAEB00354A4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 496074E1204DAAEA00354A4D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 496074E8204DAAEA00354A4D;
-			remoteInfo = "Joan_Costa-iOS_ENTI";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1036F222A77FEEC7D630F568 /* Pods_Joan_Costa_iOS_ENTITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joan_Costa_iOS_ENTITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,12 +41,6 @@
 		496074F3204DAAEB00354A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		496074F6204DAAEB00354A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		496074F8204DAAEB00354A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		496074FD204DAAEB00354A4D /* Joan_Costa-iOS_ENTITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Joan_Costa-iOS_ENTITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		49607501204DAAEB00354A4D /* Joan_Costa_iOS_ENTITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joan_Costa_iOS_ENTITests.swift; sourceTree = "<group>"; };
-		49607503204DAAEB00354A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49607508204DAAEB00354A4D /* Joan_Costa-iOS_ENTIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Joan_Costa-iOS_ENTIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4960750C204DAAEB00354A4D /* Joan_Costa_iOS_ENTIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joan_Costa_iOS_ENTIUITests.swift; sourceTree = "<group>"; };
-		4960750E204DAAEB00354A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B2B2A8208F9CD50007334B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		49F0B68520C2F26600BD8B6A /* flipCard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipCard.wav; sourceTree = "<group>"; };
 		49F0B68820C2F5E200BD8B6A /* CasinoLoop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CasinoLoop.mp3; sourceTree = "<group>"; };
@@ -85,22 +58,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EB576730D7DCABE4DB2B5D8 /* Pods_Joan_Costa_iOS_ENTI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		496074FA204DAAEB00354A4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A5E1318011E08C4454B196B /* Pods_Joan_Costa_iOS_ENTITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49607505204DAAEB00354A4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D4AC947B706B9DCE88C349A /* Pods_Joan_Costa_iOS_ENTIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				496074EB204DAAEA00354A4D /* Joan_Costa-iOS_ENTI */,
-				49607500204DAAEB00354A4D /* Joan_Costa-iOS_ENTITests */,
-				4960750B204DAAEB00354A4D /* Joan_Costa-iOS_ENTIUITests */,
 				496074EA204DAAEA00354A4D /* Products */,
 				351C9A594A95BD316A329B62 /* Pods */,
 				029AB9385BD9DF81A7AAE4ED /* Frameworks */,
@@ -146,8 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				496074E9204DAAEA00354A4D /* Joan_Costa-iOS_ENTI.app */,
-				496074FD204DAAEB00354A4D /* Joan_Costa-iOS_ENTITests.xctest */,
-				49607508204DAAEB00354A4D /* Joan_Costa-iOS_ENTIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,24 +123,6 @@
 				496074F8204DAAEB00354A4D /* Info.plist */,
 			);
 			path = "Joan_Costa-iOS_ENTI";
-			sourceTree = "<group>";
-		};
-		49607500204DAAEB00354A4D /* Joan_Costa-iOS_ENTITests */ = {
-			isa = PBXGroup;
-			children = (
-				49607501204DAAEB00354A4D /* Joan_Costa_iOS_ENTITests.swift */,
-				49607503204DAAEB00354A4D /* Info.plist */,
-			);
-			path = "Joan_Costa-iOS_ENTITests";
-			sourceTree = "<group>";
-		};
-		4960750B204DAAEB00354A4D /* Joan_Costa-iOS_ENTIUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4960750C204DAAEB00354A4D /* Joan_Costa_iOS_ENTIUITests.swift */,
-				4960750E204DAAEB00354A4D /* Info.plist */,
-			);
-			path = "Joan_Costa-iOS_ENTIUITests";
 			sourceTree = "<group>";
 		};
 		49F0B68720C2F26D00BD8B6A /* Assets */ = {
@@ -222,44 +157,6 @@
 			productReference = 496074E9204DAAEA00354A4D /* Joan_Costa-iOS_ENTI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		496074FC204DAAEB00354A4D /* Joan_Costa-iOS_ENTITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 49607514204DAAEB00354A4D /* Build configuration list for PBXNativeTarget "Joan_Costa-iOS_ENTITests" */;
-			buildPhases = (
-				7203FF3070A1A70D7BE37038 /* [CP] Check Pods Manifest.lock */,
-				496074F9204DAAEB00354A4D /* Sources */,
-				496074FA204DAAEB00354A4D /* Frameworks */,
-				496074FB204DAAEB00354A4D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				496074FF204DAAEB00354A4D /* PBXTargetDependency */,
-			);
-			name = "Joan_Costa-iOS_ENTITests";
-			productName = "Joan_Costa-iOS_ENTITests";
-			productReference = 496074FD204DAAEB00354A4D /* Joan_Costa-iOS_ENTITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		49607507204DAAEB00354A4D /* Joan_Costa-iOS_ENTIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 49607517204DAAEB00354A4D /* Build configuration list for PBXNativeTarget "Joan_Costa-iOS_ENTIUITests" */;
-			buildPhases = (
-				622BC688711485E547D80487 /* [CP] Check Pods Manifest.lock */,
-				49607504204DAAEB00354A4D /* Sources */,
-				49607505204DAAEB00354A4D /* Frameworks */,
-				49607506204DAAEB00354A4D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4960750A204DAAEB00354A4D /* PBXTargetDependency */,
-			);
-			name = "Joan_Costa-iOS_ENTIUITests";
-			productName = "Joan_Costa-iOS_ENTIUITests";
-			productReference = 49607508204DAAEB00354A4D /* Joan_Costa-iOS_ENTIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,16 +175,6 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					496074FC204DAAEB00354A4D = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 496074E8204DAAEA00354A4D;
-					};
-					49607507204DAAEB00354A4D = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 496074E8204DAAEA00354A4D;
-					};
 				};
 			};
 			buildConfigurationList = 496074E4204DAAEA00354A4D /* Build configuration list for PBXProject "Joan_Costa-iOS_ENTI" */;
@@ -304,8 +191,6 @@
 			projectRoot = "";
 			targets = (
 				496074E8204DAAEA00354A4D /* Joan_Costa-iOS_ENTI */,
-				496074FC204DAAEB00354A4D /* Joan_Costa-iOS_ENTITests */,
-				49607507204DAAEB00354A4D /* Joan_Costa-iOS_ENTIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -324,20 +209,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		496074FB204DAAEB00354A4D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49607506204DAAEB00354A4D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -353,42 +224,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Joan_Costa-iOS_ENTI-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		622BC688711485E547D80487 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Joan_Costa-iOS_ENTIUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7203FF3070A1A70D7BE37038 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Joan_Costa-iOS_ENTITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -435,36 +270,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		496074F9204DAAEB00354A4D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49607502204DAAEB00354A4D /* Joan_Costa_iOS_ENTITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49607504204DAAEB00354A4D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4960750D204DAAEB00354A4D /* Joan_Costa_iOS_ENTIUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		496074FF204DAAEB00354A4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 496074E8204DAAEA00354A4D /* Joan_Costa-iOS_ENTI */;
-			targetProxy = 496074FE204DAAEB00354A4D /* PBXContainerItemProxy */;
-		};
-		4960750A204DAAEB00354A4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 496074E8204DAAEA00354A4D /* Joan_Costa-iOS_ENTI */;
-			targetProxy = 49607509204DAAEB00354A4D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		496074F0204DAAEB00354A4D /* Main.storyboard */ = {
@@ -605,7 +411,42 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97H2DZBCR4;
 				INFOPLIST_FILE = "Joan_Costa-iOS_ENTI/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseNanoPB\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-w",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftMemoryCard.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -621,81 +462,81 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97H2DZBCR4;
 				INFOPLIST_FILE = "Joan_Costa-iOS_ENTI/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseNanoPB\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-w",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"FirebaseNanoPB\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"leveldb\"",
+					"-framework",
+					"\"nanopb\"",
+					"-w",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftMemoryCard.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		49607515204DAAEB00354A4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78ABB73CDCDE2ADF8B96C0ED /* Pods-Joan_Costa-iOS_ENTITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97H2DZBCR4;
-				INFOPLIST_FILE = "Joan_Costa-iOS_ENTITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JCR.Joan-Costa-iOS-ENTITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Joan_Costa-iOS_ENTI.app/Joan_Costa-iOS_ENTI";
-			};
-			name = Debug;
-		};
-		49607516204DAAEB00354A4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CA8A59A797CDE04B4E7C226 /* Pods-Joan_Costa-iOS_ENTITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97H2DZBCR4;
-				INFOPLIST_FILE = "Joan_Costa-iOS_ENTITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JCR.Joan-Costa-iOS-ENTITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Joan_Costa-iOS_ENTI.app/Joan_Costa-iOS_ENTI";
-			};
-			name = Release;
-		};
-		49607518204DAAEB00354A4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D737842F7371BEA2B9064D4A /* Pods-Joan_Costa-iOS_ENTIUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97H2DZBCR4;
-				INFOPLIST_FILE = "Joan_Costa-iOS_ENTIUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JCR.Joan-Costa-iOS-ENTIUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Joan_Costa-iOS_ENTI";
-			};
-			name = Debug;
-		};
-		49607519204DAAEB00354A4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C9ACBF53CB88F43B38E9A34 /* Pods-Joan_Costa-iOS_ENTIUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 97H2DZBCR4;
-				INFOPLIST_FILE = "Joan_Costa-iOS_ENTIUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JCR.Joan-Costa-iOS-ENTIUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Joan_Costa-iOS_ENTI";
 			};
 			name = Release;
 		};
@@ -716,24 +557,6 @@
 			buildConfigurations = (
 				49607512204DAAEB00354A4D /* Debug */,
 				49607513204DAAEB00354A4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		49607514204DAAEB00354A4D /* Build configuration list for PBXNativeTarget "Joan_Costa-iOS_ENTITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				49607515204DAAEB00354A4D /* Debug */,
-				49607516204DAAEB00354A4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		49607517204DAAEB00354A4D /* Build configuration list for PBXNativeTarget "Joan_Costa-iOS_ENTIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				49607518204DAAEB00354A4D /* Debug */,
-				49607519204DAAEB00354A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

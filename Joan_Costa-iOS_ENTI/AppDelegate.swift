@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        let userDefaults = UserDefaults.standard
+        userDefaults.set("NO", forKey: "mPlayerCreated")
         
         
         
@@ -50,11 +52,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         let userDefaults = UserDefaults.standard
-        userDefaults.set("NO", forKey: "musicPlaying")
         userDefaults.set("NO", forKey: "mPlayerCreated")
+        //localDataDebbug()
+        
     }
     
-  
+    
+    func localDataDebbug(){
+        let userDefaults = UserDefaults.standard
+        if let savedValue = userDefaults.string(forKey: "userName"){print("username = " + savedValue)}
+        if let savedLevel = userDefaults.string(forKey: "gameLevel"){print("Level = " + savedLevel)}
+        if let mPlayerCreated = userDefaults.string(forKey: "mPlayerCreated"){print("PlayerCreated = " + mPlayerCreated)}
+        if let savedMusic = userDefaults.string(forKey: "musicSound"){print("Music = " + savedMusic)}
+        if let savedEffect = userDefaults.string(forKey: "effectSound"){print("Effects = " + savedEffect)}
+        
+    }
 
 
 }

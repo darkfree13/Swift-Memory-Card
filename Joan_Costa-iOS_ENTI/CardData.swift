@@ -9,10 +9,13 @@
 import Foundation
 
 class DeckData { // Class to handle the deck
+    var NumOfCards:Int = 8
+    
     func getAllCards () -> [GameCard]{ //Function that returns the cards
         
         var deck: [GameCard] = [GameCard]() // Creates an empty array of cards
-        for i in 0..<8 {
+        numberOfCards()
+        for i in 0..<NumOfCards {
             let dataCard = GameCard(_value: i, _status: "i") // Creates one card
             deck.append(dataCard) // add one card to the array deck
             let dataCard2 = GameCard(_value: i, _status: "i")
@@ -23,5 +26,15 @@ class DeckData { // Class to handle the deck
         deck = deck.sorted { _,_ in arc4random_uniform(2) == 0}
         
         return deck // Returns the array of cards
+    }
+    func numberOfCards(){
+        let userDefaults = UserDefaults.standard
+            if let savedLevel = userDefaults.string(forKey: "gameLevel"){
+                if (savedLevel == "medium"){
+                    NumOfCards = 8
+                }else{
+                    NumOfCards = 6
+                }
+        }
     }
 }

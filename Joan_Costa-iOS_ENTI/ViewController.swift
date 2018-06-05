@@ -52,6 +52,22 @@ class ViewController: UIViewController,CLLocationManagerDelegate, UNUserNotifica
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    @IBAction func StartGame(_ sender: Any) {
+        let userDefaults = UserDefaults.standard
+        if let savedLevel = userDefaults.string(forKey: "gameLevel"){
+            if (savedLevel == "medium"){
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "Game_Medium")
+                self.present(newViewController, animated: true, completion: nil)
+            }else{
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "Game_Easy")
+                self.present(newViewController, animated: true, completion: nil)
+            }
+        } else {
+            userDefaults.set("medium", forKey: "gameLevel")
+        }
+    }
     
     // Local Notification Settings  START//
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
@@ -110,8 +126,11 @@ class ViewController: UIViewController,CLLocationManagerDelegate, UNUserNotifica
                 if placemark.isoCountryCode != nil {
                     self.LocationIntro.text = "Welcome to " + placemark.locality!
                 }
-                if placemark.isoCountryCode == "ES" {
-                    self.BackgroundImage.image = UIImage(named: "MenuESbackground")
+                //if placemark.isoCountryCode == "ES" {
+                if (UIImage(named: "Menu"+placemark.isoCountryCode!+"background") != nil) {
+                    self.BackgroundImage.image = UIImage(named: "Menu"+placemark.isoCountryCode!+"background")
+                }else{
+                    self.BackgroundImage.image = UIImage(named: "Sky")
                 }
             
             }
@@ -124,7 +143,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, UNUserNotifica
     //Config Background Music
     func backgroundSound(){
         let userDefaults = UserDefaults.standard
-        var isMusicPlayerCreated : String = ""
+        var isMusicPlayerCreated : String = "NO"
         if let mPlayerCreated = userDefaults.string(forKey: "mPlayerCreated"){
             isMusicPlayerCreated = mPlayerCreated
         } else {
@@ -157,7 +176,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, UNUserNotifica
         if let savedValue = userDefaults.string(forKey: "userName"){
             print("username = " + savedValue)
         } else {
-            userDefaults.set("afkPlayer", forKey: "userName")
+            userDefaults.set(UIDevice.current.name, forKey: "userName")
         }
         
     // Inicializa el nivel
@@ -173,10 +192,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate, UNUserNotifica
             
             if (savedMusic == "ON"){
                 backgroundMusic?.play()
-                userDefaults.set("YES", forKey: "musicPlaying")
             } else{
                 backgroundMusic?.stop()
-                userDefaults.set("NO", forKey: "musicPlaying")
             }
         } else {
             userDefaults.set("ON", forKey: "musicSound")
@@ -225,6 +242,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate, UNUserNotifica
         backgroundMusic?.play()
         print("notification observed - music plays")
     }
+    
+  
 
 }
 

@@ -20,14 +20,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     // Switch Effect
     @IBOutlet weak var switchEffect: UISwitch!
     
-        
-    /* textos de proba*/
-    @IBOutlet weak var textLabelProba: UILabel!
     
-    @IBOutlet weak var textLabelMusic: UILabel!
-    
-    @IBOutlet weak var textLabelEffect: UILabel!
-    /* textos de proba*/
     
      let notification = NotificationCenter.default
     
@@ -38,10 +31,8 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         switch segmentedControl.selectedSegmentIndex
         {
         case 0:
-            textLabelProba.text = "Easy";
             UserDefaults.standard.set("easy", forKey:"gameLevel")
         case 1:
-            textLabelProba.text = "Medium";
             UserDefaults.standard.set("medium", forKey:"gameLevel")
         default:
             break
@@ -51,16 +42,12 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     // Switch ON/OFF the Music sound
     @IBAction func musicSwitched(_ sender: Any) {
         if switchMusic.isOn {
-            textLabelMusic.text = "M:Off"
             UserDefaults.standard.set("OFF", forKey:"musicSound")
             switchMusic.setOn(false, animated:true)
-            UserDefaults.standard.set("NO", forKey:"musicPlaying")
             notification.post(name: Notification.Name("StopMusic"), object: nil)
             
         } else {
-            textLabelMusic.text = "M:On"
             UserDefaults.standard.set("ON", forKey:"musicSound")
-            UserDefaults.standard.set("YES", forKey:"musicPlaying")
             switchMusic.setOn(true, animated:true)
             notification.post(name: Notification.Name("PlayMusic"), object: nil)
         }
@@ -70,11 +57,9 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     // Switch ON/OFF the effect sound
     @IBAction func effectSwitched(_ sender: Any) {
         if switchEffect.isOn {
-            textLabelEffect.text = "M:Off"
             UserDefaults.standard.set("OFF", forKey:"effectSound")
             switchEffect.setOn(false, animated:true)
         } else {
-            textLabelEffect.text = "M:On"
             UserDefaults.standard.set("ON", forKey:"effectSound")
             switchEffect.setOn(true, animated:true)
         }
@@ -120,11 +105,9 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         customName.text = userName
         
         if UserDefaults.standard.string(forKey: "effectSound") == "OFF"{
-            textLabelEffect.text = "M:Off"
             switchEffect.setOn(false, animated:true)
         }
         if UserDefaults.standard.string(forKey: "musicSound") == "OFF"{
-            textLabelMusic.text = "M:Off"
             switchMusic.setOn(false, animated:true)
         }
         switch UserDefaults.standard.string(forKey: "gameLevel") {
